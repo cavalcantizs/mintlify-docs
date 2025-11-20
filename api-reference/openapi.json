@@ -22,11 +22,6 @@
     "/gateway/request-qrcode": {
       "post": {
         "description": "Gera um QR Code PIX para recebimento de pagamento.",
-        "security": [
-      {
-        "bearerAuth": []
-      }
-    ],
     "requestBody": {
       "required": true,
       "content": {
@@ -82,7 +77,7 @@
           
         }
       },
-      "posta": {
+      "get": {
         "description": "Creates a new plant in the store",
         "requestBody": {
           "description": "Plant to add to the store",
