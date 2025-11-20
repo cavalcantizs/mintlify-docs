@@ -24,8 +24,8 @@
           {
             "group": "Pix QR Code",
             "pages": [
-              "Gateway/settings",
-              "Gateway/navigation"
+              "Gateway/pix-payment",
+              "Gateway/request-qrcode"
             ]
           },
           {
