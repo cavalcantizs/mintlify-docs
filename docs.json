@@ -24,8 +24,8 @@
           {
             "group": "Pix QR Code",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "Gateway/settings",
+              "Gateway/navigation"
             ]
           },
           {

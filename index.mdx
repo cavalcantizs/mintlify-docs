@@ -13,4 +13,28 @@ A ideia da Stylepay é justamente ser um gateway com uma API direta, objetiva e 
 
 Em resumo: tudo nescessario sem dor de cabeça.
 
-### Documentação Oficial
+### **🔐 Autenticação**
+
+Use suas credenciais para autenticar cada requisição:
+
+```bash
+stpi: <seu_client_id>
+stps: <seu_client_secret>
+```
+
+### **📡 Configuração de Ambiente**
+
+| **Variável** | **Descrição**                                              |
+| ------------ | ---------------------------------------------------------- |
+| `base_url`   | URL base da API (ex: `https://api.stylepay.com.br/api/v1`) |
+| `stpi`       | Client ID                                                  |
+| `stps`       | Client Secret                                              |
+
+### **📊 Retornos**
+
+| **Código** | **Significado**    |
+| ---------- | ------------------ |
+| `200`      | Sucesso            |
+| `201`      | Criado com sucesso |
+| `400`      | Erro de validação  |
+| `500`      | Erro interno       |

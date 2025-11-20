@@ -1,0 +1,16 @@
+---
+title: "Realizar Pagamento PIX"
+description: "Realiza um pagamento PIX para terceiros."
+---
+
+**Campos obrigatórios:**
+
+- amount: Valor em reais
+- description: Descrição do pagamento
+- [creditParty.name](http://creditParty.name): Nome do destinatário
+- creditParty.keyType: Tipo da chave (CPF, CNPJ, EMAIL, PHONE, EVP, RANDOM)
+- creditParty.key: Chave PIX
+
+**Campos opcionais:**
+
+- callbackUrl: URL para receber notificações
