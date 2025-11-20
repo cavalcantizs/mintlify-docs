@@ -10,7 +10,7 @@
   },
   "servers": [
     {
-      "url": "http://sandbox.mintlify.com"
+      "url": "http://api.stylepay.com.br/api/v1"
     }
   ],
   "security": [
@@ -19,9 +19,9 @@
     }
   ],
   "paths": {
-    "/plants": {
+    "/gateway/request-qrcode": {
       "get": {
-        "description": "Returns all plants from the system that the user has access to",
+        "description": "Gera um QR Code PIX para recebimento de pagamento.",
         "parameters": [
           {
             "name": "limit",
@@ -34,8 +34,8 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "Plant response",
+          "201": {
+            "description": "Resposta de sucesso",
             "content": {
               "application/json": {
                 "schema": {
@@ -57,6 +57,7 @@
               }
             }
           }
+          
         }
       },
       "post": {
