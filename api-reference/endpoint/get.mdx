@@ -1,4 +1,17 @@
 ---
-title: 'Gerar QR Code'
-openapi: 'GET /gateway/request-qrcode'
+title: "Gerar QR Code"
+openapi: "GET /gateway/request-qrcode"
+description: "Gera um QR Code PIX para recebimento de pagamento."
 ---
+
+**Campos obrigatórios:**
+
+- amount: Valor em reais (ex: 10.50)
+
+**Campos opcionais:**
+
+- external_id: ID único da transação
+- payer: Dados do pagador
+- payerQuestion: Descrição do pagamento
+- postbackUrl: URL para receber notificações
+- products: Lista de produtos
